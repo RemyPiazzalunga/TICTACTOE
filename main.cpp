@@ -2,6 +2,28 @@
 #include "string"
 using namespace std;
 
+void afficher(bool tabPlayerA[], bool tabPlayerB[]){
+
+    cout << "_______" << endl;
+    for(int i = 0; i < 9; ++i){
+        if(i == 0 or i == 3 or i == 6){
+            cout << "|";
+        }
+        if(tabPlayerA[i]){
+            cout << "X" << "|";
+        }else if(tabPlayerB[i]){
+            cout << "O" << "|";
+        }
+        else {
+            cout << (i+1) << "|";
+        }
+        if((i+1)%3 == 0){
+            cout << endl;
+            cout << "-------" << endl;
+        }
+    }
+
+}
 
 bool winGame(bool tab[]){
     for(int i = 0 ; i < 3 ; i++){ // boucle de 1 à 3
@@ -46,7 +68,7 @@ int main() {
                    0,0,0,
                    0, 0, 0 };
 
-
+    afficher(tabPlayerA, tabPlayerB);
     string answerPlayer;
     for(int i = 1; i < 10; i++){
 
@@ -59,6 +81,7 @@ int main() {
             }
             tabPlayerB[stoi(answerPlayer)-1] = true;
             if( winGame(tabPlayerB)){
+                afficher(tabPlayerA, tabPlayerB);
                 cout << "Joueur B WIN" << endl;
                 return 0;
             };
@@ -71,10 +94,12 @@ int main() {
             }
             tabPlayerA[stoi(answerPlayer)-1] = true;
             if( winGame(tabPlayerA)){
+                afficher(tabPlayerA, tabPlayerB);
                 cout << "Joueur A WIN" << endl;
                 return 0;
             };
         }
+        afficher(tabPlayerA, tabPlayerB);
     }
     return 0;
 }
