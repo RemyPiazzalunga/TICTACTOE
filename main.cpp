@@ -97,7 +97,7 @@ int main() {
                 afficher(tabPlayerA, tabPlayerB);
                 cout << "Joueur A WIN" << endl;
                 return 0;
-            };
+            }
         }
         afficher(tabPlayerA, tabPlayerB);
     }
