@@ -1,4 +1,18 @@
 
+   /$$     /$$             /$$                           /$$                        
+  | $$    |__/            | $$                          | $$                        
+ /$$$$$$   /$$  /$$$$$$$ /$$$$$$    /$$$$$$   /$$$$$$$ /$$$$$$    /$$$$$$   /$$$$$$
+|_  $$_/  | $$ /$$_____/|_  $$_/   |____  $$ /$$_____/|_  $$_/   /$$__  $$ /$$__  $$
+  | $$    | $$| $$        | $$      /$$$$$$$| $$        | $$    | $$  \ $$| $$$$$$$$
+  | $$ /$$| $$| $$        | $$ /$$ /$$__  $$| $$        | $$ /$$| $$  | $$| $$_____/
+  |  $$$$/| $$|  $$$$$$$  |  $$$$/|  $$$$$$$|  $$$$$$$  |  $$$$/|  $$$$$$/|  $$$$$$$
+   \___/  |__/ \_______/   \___/   \_______/ \_______/   \___/   \______/  \_______/
+   
+
+
+descripton : 
+
+Jeu de tictactoe à deux joueur.
 
 
 
@@ -6,12 +20,7 @@ Pseudo code pour deux joueurs:
 
 tant que n =! 9
 
-si (i == pair)
-    Joueur B joue
-        entre chiffre entre 1 et 9
-                checkAnswer, si false => recommence entre
-                    fonction affiche
-                        fonction wingame
+Pseudo code pour deux joueur: 
 
 sinon (i == impaire)
     Joueur A joue
